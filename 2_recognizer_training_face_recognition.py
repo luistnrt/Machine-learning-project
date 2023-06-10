@@ -1,5 +1,5 @@
 # Training on created faces dataset 
-## Run this script to train on the created dataset
+## Run this script to train on the created dataset of the faces 
 
 import cv2
 import numpy as np
