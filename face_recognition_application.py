@@ -13,7 +13,7 @@ def face_recognition_app():
     global name 
 
     # face detection
-    face_cascade = cv2.CascadeClassifier('data/cascades/haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier('Face_recognition/data/cascades/haarcascade_frontalface_default.xml')
 
     # resolution of the webcam
     screen_width = 1280       
@@ -24,10 +24,10 @@ def face_recognition_app():
     image_height = 224
 
     # load the trained model
-    model = load_model('transfer_learning_vggface_cnn_model')
+    model = load_model('Face_recognition/transfer_learning_vggface_cnn_model')
 
     # the labels for the trained model
-    with open("face-labels.pickle", 'rb') as f:
+    with open("Face_recognition/face-labels.pickle", 'rb') as f:
         og_labels = pickle.load(f)
         labels = {key: value for key, value in og_labels.items()}
         print(f' labes: {labels}')
@@ -125,7 +125,7 @@ def face_recognition_app():
     cv2.destroyAllWindows()
     cv2.waitKey(1)
     
-    print(identified_person)
+    print(f'{identified_person} was identified')
     return identified_person
 
 

@@ -1,4 +1,4 @@
 # data
 ## ignore facial training data 
 
-dataset_cnn/*
+Face_recognition/dataset_cnn/*
