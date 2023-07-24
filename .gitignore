@@ -1,4 +1,18 @@
 # data
 ## ignore facial training data 
 
+__pycache__/
 Face_recognition/dataset_cnn/*
+.cache
+
+
+Gesture_control/model_examples/
+Gesture_control/data/
+Gesture_control/Logs/
+
+Gesture_control/.idea/
+Gesture_control/__pycache__/
+
+Gesture_control/.cache
+
+Gesture_control/.env
