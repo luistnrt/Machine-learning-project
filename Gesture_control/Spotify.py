@@ -39,11 +39,11 @@ class SpotifyAPI(QThread):
                           redirect_uri=self.redirect_uri, scope=SCOPE, show_dialog=True)
             self.token = oauth.get_access_token(as_dict=False, check_cache=False)
             self.change_token.emit(self.token)
-            self.change_msg.emit("Successful, let's use this app!")
+            self.change_msg.emit("Successful! \n press \n START")
             return self.token
         except Exception as e:
             print(f"Exception: {e}")
-            self.change_msg.emit("Authentication failed, please try again.")
+            self.change_msg.emit("Authentication failed, \n please try again.")
 
 
     # get information about, track and device

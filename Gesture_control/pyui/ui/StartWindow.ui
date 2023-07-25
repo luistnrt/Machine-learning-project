@@ -30,8 +30,6 @@
     <kerning>false</kerning>
    </font>
   </property>
-  <property name="windowTitle">
-   <string>Spotify gesture controller</string>
   </property>
   <property name="windowOpacity">
    <double>1.000000000000000</double>

@@ -76,5 +76,5 @@ class DetectionWindow(QDialog, Ui_DetectionWindow):
         self.detection_camera.clear()
         self.detected_gesture_name.clear()
         self.detection_confidence.clear()
-        self.detection_camera.setText("CLICK START, OPEN SPOTIFY AND START PLAY MUSIC")
+        self.detection_camera.setText("CLICK START AND OPEN SPOTIFY AND START PLAY")
         self.detection_camera.setAlignment(Qt.AlignCenter)

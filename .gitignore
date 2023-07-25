@@ -1,7 +1,7 @@
 # data
 ## ignore facial training data 
 
-__pycache__/
+__pycache__/*
 Face_recognition/dataset_cnn/*
 .cache
 

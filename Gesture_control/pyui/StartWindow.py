@@ -19,8 +19,8 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setEnabled(True)
         MainWindow.resize(518, 425)
-        MainWindow.setMinimumSize(QtCore.QSize(518, 425))
-        MainWindow.setMaximumSize(QtCore.QSize(518, 425))
+        MainWindow.setMinimumSize(QtCore.QSize(248, 248))
+        MainWindow.setMaximumSize(QtCore.QSize(248, 512))
         font = QtGui.QFont()
         font.setKerning(False)
         MainWindow.setFont(font)
@@ -31,21 +31,21 @@ class Ui_MainWindow(object):
 "    background-repeat: no-repeat;\n"
 "    background-position: bottom;\n"
 "    background-color: #2a292e;\n"
-"    border: 3px solid #1db954;\n"
+"    border: 3px solid #3440eb;\n"
 "    border-radius: 5px;\n"
 "    padding: 10px;\n"
 "}\n"
 "QPushButton{\n"
 "font-size: 18px;\n"
 "font-weight: bold;\n"
-"color: #1db954;\n"
-"border: 2px solid #1db954;\n"
+"color: #3440eb;\n"
+"border: 2px solid #3440eb;\n"
 "border-radius: 14px;\n"
 "letter-spacing: 1px;\n"
 "}\n"
 "QPushButton:hover {\n"
 "color: #121212;\n"
-"background-color:     #1db954;\n"
+"background-color:     #3440eb;\n"
 "border: 2px solid #121212;\n"
 "}")
         self.main_layout = QtWidgets.QWidget(MainWindow)
@@ -74,7 +74,7 @@ class Ui_MainWindow(object):
         self.label = QtWidgets.QLabel(self.main_layout)
         self.label.setMinimumSize(QtCore.QSize(0, 100))
         self.label.setStyleSheet("QLabel {\n"
-"color: #1db954;\n"
+"color: #3440eb;\n"
 "font-size: 20px;\n"
 "font-weight: bold;\n"
 "}")
@@ -105,14 +105,14 @@ class Ui_MainWindow(object):
         self.start_btn.setStyleSheet("QPushButton{\n"
 "font-size: 18px;\n"
 "font-weight: bold;\n"
-"color: #1db954;\n"
-"border: 2px solid #1db954;\n"
+"color: #3440eb;\n"
+"border: 2px solid #3440eb;\n"
 "border-radius: 14px;\n"
 "letter-spacing: 1px;\n"
 "}\n"
 "QPushButton:hover {\n"
 "color: #121212;\n"
-"background-color:     #1db954;\n"
+"background-color:     #3440eb;\n"
 "border: 2px solid #121212;\n"
 "}")
         self.start_btn.setFlat(False)
@@ -139,7 +139,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Spotify gesture controller"))
-        self.label.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:15pt;\"> SPOTIFY  </span></p><p align=\"center\"><span style=\" font-size:15pt;\"> GESTURE CONTROLLER</span></p></body></html>"))
-        self.start_btn.setText(_translate("MainWindow", "START"))
+        # MainWindow.setWindowTitle(_translate("MainWindow", "Spotify gesture controller"))
+        # self.label.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:15pt;\"> SPOTIFY  </span></p><p align=\"center\"><span style=\" font-size:15pt;\"> GESTURE CONTROLLER</span></p></body></html>"))
         self.login_btn.setText(_translate("MainWindow", "Login"))
+        self.start_btn.setText(_translate("MainWindow", "START"))
