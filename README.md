@@ -31,7 +31,7 @@ Gesture_control/
 1. `face_recognition_application.py`: 
    - This python script contains the code for the created application. 
 2. `gesture_control_application.py`:
-   - ** HOSHUA ** HAHAOK
+   - wrapper for the gesture control application, main component of main_application.py
 3. `main_application.py`:
    - This python script contains the code of the combination of face recog and gesture control
    - It runs the face recognition app and evaluates the output in order to start the gesture control app
@@ -47,6 +47,9 @@ Gesture_control/
 6. https://developers.google.com/mediapipe/solutions/vision/gesture_recognizer
 7. https://developer.spotify.com/documentation/web-api spotify documentation
 8. https://www.riverbankcomputing.com/software/pyqt/ pyqt documentation for frontend changes
+9. https://github.com/kinivi/hand-gesture-recognition-mediapipe
+10. https://colab.research.google.com/github/googlesamples/mediapipe/blob/main/examples/gesture_recognizer/python/gesture_recognizer.ipynb#scrollTo=TUfAcER1oUS6
+
 
 ## Steps to run this project
 
