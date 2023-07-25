@@ -85,37 +85,25 @@ border: 2px solid green;
          <property name="bottomMargin">
           <number>20</number>
          </property>
-         <item>
-          <spacer name="verticalSpacer_2">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_3">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QPushButton" name="pushButton_2">
            <property name="minimumSize">
             <size>
-             <width>0</width>
-             <height>50</height>
+             <width>150</width>
+             <height>56</height>
             </size>
            </property>
-           <property name="styleSheet">
-            <string notr="true">color: white;
-border: 2px solid #535353;
-border-radius: 14px;
-margin-bottom: 10px;
-padding: 10px;
-</string>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>56</height>
+            </size>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;INFORMATION&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>START</string>
            </property>
           </widget>
          </item>
@@ -184,19 +172,6 @@ border: none;</string>
            </layout>
           </widget>
          </item>
-         <item>
-          <spacer name="verticalSpacer">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
         </layout>
        </item>
       </layout>
@@ -220,7 +195,7 @@ border: 2px solid #535353;
 }</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;CLICK START, OPEN SPOTIFY AND START PLAY MUSIC &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;1. Start&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;2. Open Spotify &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;3. Play Music&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
          </item>
@@ -232,28 +207,6 @@ border: 2px solid #535353;
            <property name="bottomMargin">
             <number>20</number>
            </property>
-           <item>
-            <widget class="QPushButton" name="pushButton_2">
-             <property name="minimumSize">
-              <size>
-               <width>150</width>
-               <height>56</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>150</width>
-               <height>56</height>
-              </size>
-             </property>
-             <property name="cursor">
-              <cursorShape>PointingHandCursor</cursorShape>
-             </property>
-             <property name="text">
-              <string>START</string>
-             </property>
-            </widget>
-           </item>
           </layout>
          </item>
         </layout>

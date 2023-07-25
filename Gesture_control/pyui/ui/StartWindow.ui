@@ -30,6 +30,8 @@
     <kerning>false</kerning>
    </font>
   </property>
+  <property name="windowTitle">
+   <string>Spotify gesture controller</string>
   </property>
   <property name="windowOpacity">
    <double>1.000000000000000</double>
@@ -132,23 +134,32 @@ border: 2px solid #121212;
           <property name="bottomMargin">
            <number>30</number>
           </property>
-          <item alignment="Qt::AlignHCenter|Qt::AlignTop">
-           <widget class="QLabel" name="label">
+          <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+           <widget class="QPushButton" name="login_btn">
             <property name="minimumSize">
              <size>
-              <width>0</width>
-              <height>100</height>
+              <width>300</width>
+              <height>40</height>
              </size>
             </property>
-            <property name="styleSheet">
-             <string notr="true">QLabel {
-color: #1db954;
-font-size: 20px;
-font-weight: bold;
-}</string>
+            <property name="maximumSize">
+             <size>
+              <width>156</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:15pt;&quot;&gt; SPOTIFY  &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:15pt;&quot;&gt; GESTURE CONTROLLER&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>Connect to Spotify</string>
             </property>
            </widget>
           </item>
@@ -172,7 +183,7 @@ font-weight: bold;
               <property name="bottomMargin">
                <number>30</number>
               </property>
-              <item>
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                <widget class="QPushButton" name="start_btn">
                 <property name="minimumSize">
                  <size>
@@ -219,34 +230,40 @@ border: 2px solid #121212;
                 </property>
                </widget>
               </item>
-              <item>
-               <widget class="QPushButton" name="login_btn">
-                <property name="minimumSize">
-                 <size>
-                  <width>150</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>156</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="cursor">
-                 <cursorShape>PointingHandCursor</cursorShape>
-                </property>
-                <property name="text">
-                 <string>Login</string>
-                </property>
-               </widget>
-              </item>
              </layout>
             </item>
            </layout>
           </item>
           <item>
-           <layout class="QVBoxLayout" name="verticalLayout_4"/>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+             <widget class="QLabel" name="label">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>-1</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+color: #1db954;
+font-size: 20px;
+font-weight: bold;
+}</string>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:15pt;&quot;&gt;connect api&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </item>
          </layout>
         </item>
@@ -262,3 +279,4 @@ border: 2px solid #121212;
  </resources>
  <connections/>
 </ui>
+
