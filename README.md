@@ -13,7 +13,7 @@ Face_recognition/
   - `face_recognition_CNN_training.ipynb`: this jupyter notebook contains the code which was used to train and evaluate the face recognition model
   - `Evaluation und Tests/` -> Documentation of implementation which were not used in the final product 
       - `Facial_Recognition_Vortrainiert`: previous tries to create a face recognizer using LBPHFaceRecognizer class of OpenCV. Was dismissed due to bad evaluation
-      - `Other Files`: e.g. above. other implementation of face recognizers which we dismissed due to their performance
+      - `Other Files`: e.g. above. other implementations of face recognizers which we dismissed due to their performance
 
 Gesture_control/
 
