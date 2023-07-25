@@ -11,7 +11,10 @@ Face_recognition/
   - `transfer_learning_vggface_cnn_model`: contains the save trained cnn model which is used for the classification of our faces
   - `face-labels.pickle`: contains the labels (classes)
   - `face_recognition_CNN_training.ipynb`: this jupyter notebook contains the code which was used to train and evaluate the face recognition model
-  
+  - `Evaluation und Tests/` -> Documentation of implementation which were not used in the final product 
+      - `Facial_Recognition_Vortrainiert`: previous tries to create a face recognizer using LBPHFaceRecognizer class of OpenCV. Was dismissed due to bad evaluation
+      - `Other Files`: e.g. above. other implementation of face recognizers which we dismissed due to their performance
+
 Gesture_control/
 
   - `models/`: contains the trained model and .py file for the dataset creation and landmark connection
