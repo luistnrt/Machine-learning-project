@@ -48,7 +48,7 @@ Gesture_control/
 7. https://developer.spotify.com/documentation/web-api spotify documentation
 8. https://www.riverbankcomputing.com/software/pyqt/ pyqt documentation for frontend changes
 
-### if you want to run this project do those steps:
+## Steps to run this project
 
 #### venv setup
 1. create virtual environment
