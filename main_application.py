@@ -5,7 +5,10 @@ if __name__ == '__main__':
 
     name = face_recognition_app()
     
-    if name == 'luis':
+    if name == 'joshua':
         gesture_control_app()
 
         
+    
+    
+

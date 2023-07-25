@@ -16,3 +16,4 @@ Gesture_control/__pycache__/
 Gesture_control/.cache
 
 Gesture_control/.env
+mlenv/*
