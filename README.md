@@ -30,7 +30,7 @@ Gesture_control/
 
 ## Bibliography 
 
-1.Brownlee, J. (2020). How to perform face recognition with VGGFACE2 in Keras. MachineLearningMastery.com. https://machinelearningmastery.com/how-to-perform-face-recognition-with-vggface2-convolutional-neural-network-in-keras/
+1. Brownlee, J. (2020). How to perform face recognition with VGGFACE2 in Keras. MachineLearningMastery.com. https://machinelearningmastery.com/how-to-perform-face-recognition-with-vggface2-convolutional-neural-network-in-keras/
 2. CODE Magazine, EPS Software Corp., Wei-Meng Lee. (o. D.). Implementing face recognition using deep learning and support vector machines. https://www.codemag.com/Article/2205081/Implementing-Face-Recognition-Using-Deep-Learning-and-Support-Vector-Machines
 3. Singh, A. (2021, 13. Dezember). How to implement Face recognition using VGG Face in Python 3.7 and Tensorflow 2.0. Medium. https://medium.com/analytics-vidhya/how-to-implement-face-recognition-using-vgg-face-in-python-3-8-and-tensorflow-2-0-a0593f8c95c3
 
