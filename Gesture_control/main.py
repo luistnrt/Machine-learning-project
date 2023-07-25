@@ -1,4 +1,6 @@
 # main file to execute the gesture control application
+# start pyqt5 application
+# show window of app on screen until user closes it
 
 import sys
 

@@ -34,6 +34,8 @@ class GestureRecognitionThread(QThread):
     add_gesture = pyqtSignal(str)
     clear_labels = pyqtSignal()
 
+
+    
     def hand_prediction(self, frame: np.ndarray, model: Holistic) -> Type:
         """Function makes prediction based on holistic model.
 
@@ -51,6 +53,7 @@ class GestureRecognitionThread(QThread):
         frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
         return results
 
+    # using mediapipe to draw landmarks and connections
     def create_landmarks(self, image: np.ndarray, results: Type) -> None:
         """Function draws styled landmarks.
 
@@ -68,6 +71,7 @@ class GestureRecognitionThread(QThread):
         self.mp_drawing.draw_landmarks(image, results.right_hand_landmarks, self.mp_holistic.HAND_CONNECTIONS,
                                        landmarks_right_hand, connection_line_right)
 
+    # save landmarks to array and concatenate outputs for return value
     def save_landmarks(self, results: Type) -> np.ndarray:
         """Function creates array with coordinates of landmarks.
 
@@ -87,6 +91,7 @@ class GestureRecognitionThread(QThread):
 
         return np.concatenate([left_hand_points, right_hand_points])
 
+    # convert image from camera to QImage to display it
     def convert_image(self, image: np.ndarray) -> QImage:
         """Function converts np.ndarray from camera to QImage to display it."""
         RGB_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -95,6 +100,9 @@ class GestureRecognitionThread(QThread):
         scaled_image = converted_image.scaled(600, 600, Qt.KeepAspectRatio)
         return scaled_image
 
+    # loading model
+    # connection to spotify
+    # applying model in loop
     def run(self) -> None:
         """Function detect gestures based on image from camera and add detected gesture's name to the queue."""
         landmarks_from_frame = []

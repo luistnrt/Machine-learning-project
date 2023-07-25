@@ -154,6 +154,8 @@ class SpotifyAPI(QThread):
         except Exception as e:
             print(f"Exception: {e}")
 
+
+    # get saved tracks to check if current track is in the list for further logic -> if yes, remove it -> if not, save it
     def saved_tracks_id(self) -> list[str]:
         """Function creates list of saved tracks' id"""
         try:
@@ -170,6 +172,7 @@ class SpotifyAPI(QThread):
         except Exception as e:
             print(f"Exception: {e}")
 
+    # saving track to saved songs endpoint
     def save_track(self, current_track_id: str) -> None:
         """Function adds track to saved playlist.
 
@@ -182,6 +185,7 @@ class SpotifyAPI(QThread):
         except Exception as e:
             print(f"Exception: {e}")
 
+    # removing track from saved songs endpoint
     def remove_track(self, current_track_id: str) -> None:
         """Function removes currently playing track from saved playlist.
 

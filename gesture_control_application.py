@@ -1,3 +1,6 @@
+# mirror of Gesture_control/main.py to keep folder structure of the project consistent
+
+
 import sys
 
 from PyQt5.QtWidgets import QApplication
