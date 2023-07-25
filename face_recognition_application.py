@@ -94,7 +94,7 @@ def face_recognition_app():
                 # Check if the person has been detected for 5 seconds
                 if time.time() - last_detection_time >= 5:
                     if identified_person == 'luis':
-                        # Display "Access Granted" when the person is identified as 'joshua'
+                        # Display "Access Granted" when the person is identified as 'luis'
                         cv2.putText(frame, "Access Granted", (x - 20, y + h + 30), font, 1, (0, 255, 0), stroke, cv2.LINE_AA)
                         '''
                         Could input a break statement here in order to break the application once the person is identified. Afterwards our motion controll
